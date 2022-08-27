@@ -126,9 +126,9 @@
 	        }
         }
 
-        function draNet(){
+        function drawNet(){
             for(var i=0; i<canvas.height; i+=40){
-            colorRect(canvas.width/2-1, i, 2, 20, 'black');
+            colorRect(canvas.width/2-1, i, 2, 20, 'white');
             }
         }
 
@@ -145,7 +145,8 @@
                     return;
                 }
 	        }
-
+            drawNet()
+            
             //left player paddle
             colorRect(0, paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGHT, 'white');
 
