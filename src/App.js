@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-    
-    <script>
+import './App.css';
+
+function App() {
         var canvas;
         var canvasContext;
         var ballX = 50;
@@ -171,5 +169,6 @@
             canvasContext.fillStyle = drawColor;
             canvasContext.fillRect(leftX, topY, width, height);
         }
-    </script>
-</html>
+}
+
+export default App;
